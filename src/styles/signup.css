@@ -1,0 +1,146 @@
+/* Signup form base */
+.signup-form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+.signup-form-title {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* Form control */
+.signup-form-control {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.signup-input-field {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+    color: #222;
+    caret-color: #ec7813;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.signup-input-field:focus {
+    border-color: #ec7813;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+/* Floating label */
+.signup-form-control label {
+    position: absolute;
+    top: 40%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 16px;
+    pointer-events: none;
+    background-color: transparent;
+    padding: 0 4px;
+    transition: all 0.25s ease;
+}
+
+.signup-input-field:focus+label,
+.signup-input-field:not(:placeholder-shown)+label {
+    top: -8px;
+    left: 0%;
+    font-size: 13px;
+    color: #ec7813;
+}
+
+/* Validation states */
+.signup-input-field.signup-invalid {
+    border-color: #ec7813;
+}
+
+.signup-input-field.signup-valid {
+    border-color: #ec7813;
+}
+
+/* Icons */
+.signup-error-icon,
+.signup-success-icon {
+    position: absolute;
+    right: 12px;
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 1.1rem;
+}
+
+.signup-error-icon {
+    color: #ec7813;
+}
+
+.signup-success-icon {
+    color: #ec7813;
+}
+
+/* Password eye icon */
+.signup-password-control i.fa-eye,
+.signup-password-control i.fa-eye-slash {
+    position: absolute;
+    right: 12px;
+    top: 40%;
+    transform: translateY(-50%);
+    color: #888;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.signup-password-control i.fa-eye:hover,
+.signup-password-control i.fa-eye-slash:hover {
+    color: #ec7813;
+}
+
+/* Button */
+.signup-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background: #ec7813;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.signup-btn:hover {
+    opacity: .9;
+}
+
+/* Footer */
+.signup-form-footer {
+    text-align: center;
+    font-size: 0.95rem;
+    margin-top: 15px;
+    color: #666;
+}
+
+.signup-form-footer a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.signup-form-footer a:hover {
+    text-decoration: underline;
+}

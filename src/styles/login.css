@@ -1,0 +1,246 @@
+.background {
+    
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: var(--bg);
+    backdrop-filter: blur(6px);
+}
+
+.login-container {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    background: transparent;
+    padding: 2rem;
+    z-index: 2;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ec7813;
+    gap: 10px;
+}
+
+.logo svg {
+    width: 32px;
+    height: 32px;
+}
+.logo h2{
+    color: var(--text2);
+}
+
+.welcome {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-top: 10px;
+    color: var(--text2);
+}
+
+
+
+input {
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    border: 2px solid #e6e0db;
+    background: transparent;
+    outline: none;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+.input-group{
+    position: relative;
+    margin-bottom: 30px;
+}
+#email-label{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    font-size: 1rem;
+    color: var(--text2);
+}
+
+
+.password-field {
+    display: flex;
+    align-items: center;
+}
+
+.password-field input {
+    flex: 1;
+    border-radius: 8px 8px;
+}
+
+.password-field button {
+    background: #fff;
+    border: 1px solid #e6e0db;
+    border-left: none;
+    padding: 0 15px;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+}
+
+.forgot {
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #897461;
+    text-decoration: underline;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #ec7813;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    color: #897461;
+}
+
+.divider hr {
+    flex: 1;
+    border: 0;
+    border-top: 1px solid #e6e0db;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.socials button {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px;
+    border: 1px solid #e6e0db;
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.socials img {
+    width: 24px;
+    height: 24px;
+}
+
+.signup {
+    text-align: center;
+    margin-top: 20px;
+    color: #897461;
+}
+
+.signup a {
+    color: #ec7813;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.form-control {
+    position: relative;
+    margin: 25px 0;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+}
+
+label {
+    position: absolute;
+    top: 40%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 16px;
+    pointer-events: none;
+    background-color: transparent;
+    padding: 0 4px;
+    transition: all 0.25s ease;
+}
+
+.input-field:focus+label,
+.input-field:not(:placeholder-shown)+label {
+    top: -8px;
+    left: 0px;
+    font-size: 13px;
+    color: #ec7813;
+}
+.input-field {
+    caret-color: #007bff;/* blue cursor */
+    color: #888;
+}
+
+.input-field:focus {
+    border-color: #ec7813;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+}
+.password-control{
+    margin-bottom: 10px;
+}
+
+.password-control i {
+    position: absolute;
+    right: 12px;
+    top: 40%;
+    transform: translateY(-50%);
+    color: #888;
+    cursor: pointer;
+}
+/* Invalid input border color */
+.input-field.invalid {
+    border-color: #ff4d4d;
+}
+
+
+/* Icons */
+.email-control i {
+  position: absolute;
+  right: 12px;
+  top: 40%;
+  transform: translateY(-50%);
+  font-size: 1.1rem;
+}
+
+.error-icon {
+  color: #ec7813;
+}
+
+.success-icon {
+  color: #ec7813;
+}
+

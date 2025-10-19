@@ -1,0 +1,64 @@
+/* Container */
+.privacy-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px 30px;
+}
+
+/* Title */
+.privacy-container h2 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+/* Section */
+.policy-section {
+    border-top: 2px solid #ddd;
+    padding-top: 40px;
+    margin-top: 20px;
+}
+
+/* Each item */
+.policy-item {
+    margin-bottom: 30px;
+}
+
+.policy-item h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.policy-item p {
+    color: #555;
+    margin: 0;
+}
+
+/* Closing text */
+.closing {
+    margin-top: 30px;
+    font-weight: 500;
+    text-align: center;
+    color: #222;
+}
+
+/* Optional Dark Mode */
+@media (prefers-color-scheme: dark) {
+
+    .policy-section {
+        border-top: 1px solid #444;
+    }
+
+    .policy-item h3 {
+        color: #fff;
+    }
+
+    .policy-item p,
+    .closing {
+        color: #ccc;
+    }
+}
