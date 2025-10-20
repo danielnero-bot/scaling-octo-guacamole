@@ -6,12 +6,12 @@ import { getFirestore, doc, setDoc } from "firebase/firestore"; // Import getFir
 
 // Your web app's Firebase configuration (use your actual config)
 const firebaseConfig = {
-  apiKey: "AIzaSyATXA2SFAqvuRMfE44WTywIvIOcMWzKyj4",
-  authDomain: "quick-plate-app-8dc81.firebaseapp.com",
-  projectId: "quick-plate-app-8dc81",
-  storageBucket: "quick-plate-app-8dc81.firebasestorage.app",
-  messagingSenderId: "776981023841",
-  appId: "1:776981023841:web:04c1e13efa1b8886e06e20",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
   measurementId: "G-SWDSQ3NXM9",
 };
 

@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
 export default function Navbar(){
+  function showMenu() {
+    const dropdown = document.querySelector('.mobile-menu-dropdown').style.display = "block"
+  }
       return (
         <>
-          <header class="app-header">
-            <div class="header-container">
-              <Link to="/" class="brand">
-                <Link class="brand-icon" to="/">
+          <header className="app-header">
+            <div className="header-container">
+              <Link to="/"  className="brand">
+                <div className="brand-icon" to="/">
                   <svg
                     fill="none"
                     viewBox="0 0 48 48"
@@ -16,22 +19,29 @@ export default function Navbar(){
                       fill="currentColor"
                     ></path>
                   </svg>
-                </Link>
-                <h2 class="brand-title">Quick Plate</h2>
+                </div>
+                <h2 className="brand-title">Quick Plate</h2>
               </Link>
 
-              <div class="nav-section">
+              <div className="nav-section">
                 <div className="nav-links">
                   <Link to="/about">About</Link>
                   <Link to="/menu">Menu</Link>
                   <Link to="/contact">Contact</Link>
                 </div>
-                <div class="button">
-                  <button class="btn-primary">
+                <div className="button">
+                  <button className="btn-primary">
                     <Link to="/login">Order Online</Link>
                   </button>
                 </div>
+                
               </div>
+              <div className="mobile-nav" onclick={showMenu}>
+                  <i className="fa-solid fa-bars"></i>
+                  <div className="mobile-menu-dropdown">
+                    working
+                  </div>
+                </div>
             </div>
           </header>
         </>
