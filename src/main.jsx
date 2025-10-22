@@ -9,8 +9,9 @@ import Login from './pages/Login.jsx'
 import Privacy from './pages/Privacy.jsx'
 import Contact from './pages/Contact.jsx'
 import Signup from './pages/Signup.jsx'
-import Dashboard from './pages/Dashboard.jsx'
+import Dashboard from './pages/dashboard.jsx'
 import NotFound from "./pages/NotFound.jsx"
+import TermsOfService from './pages/TermsOfService.jsx'
 
 const router = createBrowserRouter([
   { path: "/", element: <App />, errorElement: <NotFound /> },
@@ -22,11 +23,12 @@ const router = createBrowserRouter([
   { path: "/signup", element: <Signup />, errorElement: <NotFound /> },
   { path: "/dashboard", element: <Dashboard />, errorElement: <NotFound /> },
   { path: "*", element: <NotFound /> },
+  { path: "/terms", element: <TermsOfService />, errorElement: <NotFound /> },
 ]);
 
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
+createRoot(document.getElementById("root")).render(
+  <BrowserRouter basename="/scaling-octo-guacamole">
     <RouterProvider router={router} />
-  </StrictMode>,
-)
+  </BrowserRouter>
+);

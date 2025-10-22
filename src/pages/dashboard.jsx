@@ -28,77 +28,11 @@ const Dashboard = () => {
 
           <div className="profile">
             <button className="profile-btn">
-              <span className="material-symbols-outlined">person</span>
+              <i class="fa-solid fa-circle-user"></i>
             </button>
           </div>
         </div>
       </header>
-
-      {/* MAIN */}
-      <main className="main">
-        <section className="welcome">
-          <h2>Welcome back, John!</h2>
-        </section>
-
-        {/* Recent Orders */}
-        <section className="orders">
-          <h3>Recent Orders</h3>
-          <div className="orders-list">
-            <div className="order-card">
-              <div className="order-info">
-                <div>
-                  <p className="order-name">Spaghetti Carbonara</p>
-                  <p className="order-meta">July 12, 2024 - $15.99</p>
-                </div>
-                <button className="reorder-btn">Reorder</button>
-              </div>
-              <div
-                className="order-image"
-                style={{
-                  backgroundImage:
-                    "url('https://images.unsplash.com/photo-1601924582971-dfba7c88c0e7')",
-                }}
-              ></div>
-            </div>
-
-            <div className="order-card">
-              <div className="order-info">
-                <div>
-                  <p className="order-name">Margherita Pizza</p>
-                  <p className="order-meta">July 5, 2024 - $12.99</p>
-                </div>
-                <button className="reorder-btn">Reorder</button>
-              </div>
-              <div
-                className="order-image"
-                style={{
-                  backgroundImage:
-                    "url('https://images.unsplash.com/photo-1548365328-9a88f5f17b30')",
-                }}
-              ></div>
-            </div>
-          </div>
-        </section>
-
-        {/* Quick Actions */}
-        <section className="actions">
-          <h3>Quick Actions</h3>
-          <div className="action-buttons">
-            <button className="action-btn">
-              <span className="material-symbols-outlined">restaurant_menu</span>
-              <span>Order Now</span>
-            </button>
-            <button className="action-btn">
-              <span className="material-symbols-outlined">event_seat</span>
-              <span>Make a Reservation</span>
-            </button>
-            <button className="action-btn">
-              <span className="material-symbols-outlined">menu_book</span>
-              <span>View Full Menu</span>
-            </button>
-          </div>
-        </section>
-      </main>
 
       {/* FOOTER */}
       <footer className="footer">

@@ -1,6 +1,4 @@
 .dashboard-container {
-    background-color: #f8f7f6;
-    color: #181411;
     font-family: "Epilogue", sans-serif;
     min-height: 100vh;
     display: flex;
@@ -11,7 +9,6 @@
 .dashboard-header {
     position: sticky;
     top: 0;
-    background-color: rgba(248, 247, 246, 0.95);
     backdrop-filter: blur(8px);
     border-bottom: 1px solid #f4f2f0;
     z-index: 10;
@@ -56,10 +53,10 @@
 }
 
 .profile-btn {
-    background-color: rgba(236, 120, 19, 0.2);
+    background-color: initial;
     border: none;
     border-radius: 50%;
-    width: 40px;
+    width: 50px;
     height: 40px;
     color: #ec7813;
     cursor: pointer;
@@ -68,6 +65,9 @@
 
 .profile-btn:hover {
     background-color: rgba(236, 120, 19, 0.3);
+}
+.profile-btn>i{
+    width: 100%;
 }
 
 /* MAIN */
@@ -169,7 +169,6 @@
 /* FOOTER */
 .footer {
     border-top: 1px solid #f4f2f0;
-    background-color: #f8f7f6;
     padding: 1.5rem;
     display: flex;
     justify-content: space-between;

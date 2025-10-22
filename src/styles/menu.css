@@ -1,11 +1,19 @@
 .menu-container {
     font-family: "Epilogue", sans-serif;
-    color: #222;
+    color: #555;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
+.menu-hero{
+    color: #555;
+}
 
+@media (prefers-color-scheme: dark) {
+    .menu-hero{
+        color: white;
+    }
+}
 /* Header */
 .menu-header {
     background-color: #fff;
@@ -96,8 +104,13 @@
     font-size: 2rem;
     margin-bottom: 1.5rem;
     font-weight: 700;
+    color: #000;
 }
-
+@media (prefers-color-scheme: dark) {
+    .menu-section h3{
+        color: white;
+    }
+}
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(270px, 1fr));
@@ -146,3 +159,69 @@
     font-size: 1.1rem;
 }
 
+/* ===== MOBILE STYLES ===== */
+@media (max-width: 768px) {
+  .menu-main {
+    padding: 2rem 1.5rem;
+  }
+
+  .menu-hero h2 {
+    font-size: 2rem;
+  }
+
+  .menu-hero p {
+    font-size: 1rem;
+  }
+
+  .menu-grid {
+    gap: 1.5rem;
+  }
+
+  .menu-card img {
+    height: 180px;
+  }
+
+  .menu-card-content {
+    padding: 1rem;
+  }
+
+  .menu-card-content h4 {
+    font-size: 1.05rem;
+  }
+
+  .menu-card-content p {
+    font-size: 0.9rem;
+  }
+}
+
+/* ===== SMALL MOBILE (≤480px) ===== */
+@media (max-width: 480px) {
+  .menu-main {
+    padding: 1.5rem 1rem;
+  }
+
+  .menu-hero h2 {
+    font-size: 1.6rem;
+  }
+
+  .menu-hero p {
+    font-size: 0.95rem;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .menu-card img {
+    height: 160px;
+  }
+
+  .menu-card-content h4 {
+    font-size: 1rem;
+  }
+
+  .menu-card-content span {
+    font-size: 0.9rem;
+  }
+}

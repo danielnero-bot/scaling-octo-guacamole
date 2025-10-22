@@ -2,29 +2,41 @@ import { Link } from "react-router-dom";
 export default function Footer() {
     return (
       <>
-        <footer class="app-footer">
-          <div class="footer-container">
-            <div class="footer-top">
-              <div class="footer-links">
+        <footer className="app-footer">
+          <div className="footer-container">
+            <div className="footer-top">
+              <div className="footer-links">
                 <Link to="/privacy">Privacy Policy</Link>
-                <a href="#">Terms of Service</a>
+                <Link to="/terms">Terms of Service</Link>
               </div>
-              <div class="footer-icons">
-                <a href="#" class="icon">
-                  <i class="fa-brands fa-facebook"></i>
+              <div className="footer-icons">
+                <a
+                  target="_blank"
+                  href="https://web.facebook.com/people/Daniel-Nero/61573024959905/#"
+                  className="icon"
+                >
+                  <i className="fa-brands fa-facebook"></i>
                 </a>
-                <a href="#" class="icon">
-                  <i class="fa-brands fa-instagram"></i>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/d.ne_ro?igsh=eTM4bHIwZjlsOTQ5"
+                  className="icon"
+                >
+                  <i className="fa-brands fa-instagram"></i>
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/daniel-oghenero-b23937388?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  className="icon"
+                >
+                  <i className="fa-brands fa-linkedin"></i>
                 </a>
                 <a href="#" className="icon">
-                  <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="#" className="icon">
-                  <i class="fa-brands fa-whatsapp"></i>
+                  <i className="fa-brands fa-whatsapp"></i>
                 </a>
               </div>
             </div>
-            <p class="footer-bottom">
+            <p className="footer-bottom">
               © 2025 Quick Plate. All rights reserved. | Made by Nero
             </p>
           </div>

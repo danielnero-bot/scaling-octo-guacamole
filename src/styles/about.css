@@ -1,0 +1,174 @@
+/* General */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Layout */
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+.order-btn {
+    background: #ec7813;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.order-btn:hover {
+    background: #d36b11;
+}
+
+/* Main Content */
+.main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.content {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+/* Hero */
+.hero-section {
+    position: relative;
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+}
+
+.hero-overlay h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* Sections */
+.section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.section p {
+    line-height: 1.7;
+    color: #555;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Team */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 32px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-photo {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto 10px;
+}
+
+.role {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.description {
+    margin-top: 20px;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* Buttons */
+.button-wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.view-menu-btn {
+    background: #ec7813;
+    color: white;
+    border: none;
+    padding: 12px 32px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.view-menu-btn:hover {
+    background: #d36b11;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-overlay h1 {
+        font-size: 2rem;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+    }
+
+    .view-menu-btn {
+        width: 100%;
+    }
+}

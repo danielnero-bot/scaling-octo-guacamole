@@ -4,9 +4,24 @@ import dish3 from '../assets/images/Yamandsauce.webp'
 import avatar1 from '../assets/images/istockphoto-2210411614-612x612.webp'
 import avatar2 from "../assets/images/istockphoto-2215371929-612x612.webp"
 import avatar3 from "../assets/images/istockphoto-1673644510-612x612.webp";
+import { Link, useNavigate } from 'react-router-dom'
+import { getAuth } from "firebase/auth";
+
 
 
 export default function Main() {
+  const auth = getAuth();
+  const navigate = useNavigate();
+  
+  // 👇 Check Firebase Auth state
+  const handleOrderClick = () => {
+    const user = auth.currentUser;
+
+    if (user) {
+      navigate("/dashboard"); // redirect if logged in
+    } else {
+      navigate("/login"); // go to login/signup if not
+    }}
     return (
       <>
         <main className="main-content">
@@ -16,8 +31,8 @@ export default function Main() {
                 <h1>Quick Plate</h1>
                 <p>Savor the taste of home, delivered to your door.</p>
                 <div className="hero-buttons">
-                  <button className="btn-primary">Order Now</button>
-                  <button className="btn-outline">View Menu</button>
+                  <Link to="" onClick={handleOrderClick} className="btn-primary">Order Now</Link>
+                  <button className="btn-outline"><Link to="/menu">View Menu</Link></button>
                 </div>
               </div>
             </section>
@@ -140,12 +155,8 @@ export default function Main() {
             <section className="contact-section">
               <h2>Contact Us</h2>
               <p>For inquiries or reservations, please contact us at:</p>
-              <p>
-                Email:
-                <a href="mailto:nero80311@gmail.com">nero80311@gmail.com</a> |
-                Phone:
-                <a href="tel:2348069132153">234(0)806-913-2153</a>
-              </p>
+              <p>Email:<a href="mailto:nero80311@gmail.com"> nero80311@gmail.com</a> </p>
+              <p>Phone:<a href="tel:2348069132153"> 234(0)806-913-2153</a></p>
             </section>
           </div>
         </main>
