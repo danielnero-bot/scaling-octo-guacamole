@@ -1,4 +1,6 @@
 import "../styles/about.css";
+import React from "react";
+
 import Navbar from '../components/Navbar'
 import managerAvatar from  '../assets/images/restaurantmanager.jpg'
 import chef from '../assets/images/chef.jpg'

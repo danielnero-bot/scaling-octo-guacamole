@@ -1,4 +1,6 @@
 import '../styles/privacy.css'
+import React from "react";
+
 import Navbar from '../components/Navbar.jsx'
 import Footer from '../components/Footer'
 export default function Privacy() {

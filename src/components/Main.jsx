@@ -6,6 +6,7 @@ import avatar2 from "../assets/images/istockphoto-2215371929-612x612.webp"
 import avatar3 from "../assets/images/istockphoto-1673644510-612x612.webp";
 import { Link, useNavigate } from 'react-router-dom'
 import { getAuth } from "firebase/auth";
+import React from "react";
 
 
 

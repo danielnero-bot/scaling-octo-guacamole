@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { getAuth } from "firebase/auth";
+import React from "react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
